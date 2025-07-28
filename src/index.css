@@ -1,0 +1,61 @@
+/* Reset dan full width */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #fffdf9; /* atau #fcebd5 */
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Pastikan semua section lebar penuh */
+section {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 60px 20px;
+}
+
+/* Hilangkan efek garis bawah global pada semua a */
+a, a::after {
+  text-decoration: none;
+  border: none;
+  background: none;
+  content: none;
+}
+
+/* Hover color tetap boleh orange */
+a:hover {
+  color: #e67e22;
+}
+
+a:hover span {
+  transform: scaleX(1) !important;
+}
+
+/* Navbar specific styles */
+.nav-link {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 6px 0;
+  border-bottom: none;
+  transition: all 0.3s;
+}
+
+.nav-link.active {
+  color: #e67e22;
+  text-decoration: underline wavy #e67e22;
+  text-underline-offset: 6px;
+}
+
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
